@@ -1,6 +1,9 @@
 
 
-def wordCount(text)
+def wordCount()
+	puts "Enter a sentence"
+	text = gets.chomp
+
 	frequency = Hash.new(0)
 	words = text.split(" ")
 	words.each{|word| 
@@ -9,5 +12,5 @@ def wordCount(text)
 	return frequency
 end
 
-puts wordCount("Hello World is my is word")
+puts wordCount()
 
